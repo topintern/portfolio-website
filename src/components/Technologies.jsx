@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import { RiReactjsLine } from "react-icons/ri";
 import { TbBrandNextjs } from "react-icons/tb";
 import { SiAmazonaws, SiAwselasticloadbalancing, SiAwslambda, SiAwssecretsmanager, SiKubernetes, SiMysql, SiQlik, SiRubyonrails, SiSpringboot, SiSqlite, SiTensorflow } from "react-icons/si";
@@ -8,19 +9,8 @@ import { BiLogoPostgresql, BiLogoSpringBoot } from "react-icons/bi";
 import { motion } from "framer-motion";
 import { GrKubernetes } from "react-icons/gr";
 import { PiBellSimpleRingingThin } from "react-icons/pi";
+import HoverIcon from './HoverIcon';
 
-const iconVariants = (duration) => ({
-  initial: { y: -10 },
-  animate: {
-    y: [10, -10],
-    transition: {
-      duration: duration,
-      ease: "linear",
-      repeat: Infinity,
-      repeatType: "reverse",
-    },
-  },
-});
 
 const Technologies = () => {
   return (
@@ -30,6 +20,7 @@ const Technologies = () => {
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 1.5 }}
         className="my-20 text-center text-4xl"
+
       >
         Technologies
       </motion.h2>
@@ -38,63 +29,16 @@ const Technologies = () => {
         initial={{ opacity: 0, x: -100 }}
         transition={{ duration: 1.5 }}
         className="flex flex-wrap items-center justify-center gap-4"
+
       >
-        <motion.div
-          variants={iconVariants(2.5)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-        >
-          <RiReactjsLine className="text-7xl text-cyan-400" />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(3)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-        >
-          <BiLogoSpringBoot className="text-7xl text-green-400"/>
-        </motion.div>
-        <motion.div
-          variants={iconVariants(5)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-        >
-          <SiRubyonrails className="text-7xl text-red-500" />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(2)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-        >
-          <DiDocker className="text-7xl text-blue-700" />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(6)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-        >
-          <SiKubernetes className="text-7xl text-blue-500" />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(4)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-        >
-          <SiAmazonaws className="text-7xl text-orange-700" />
-        </motion.div>
-        <motion.div
-          variants={iconVariants(4)}
-          initial="initial"
-          animate="animate"
-          className="rounded-2xl border-4 border-neutral-800 p-4"
-        >
-          <SiMysql className="text-7xl text-sky-700" />
-        </motion.div>
+        <HoverIcon icon={<RiReactjsLine className="text-7xl text-cyan-400" />} text="ReactJS" duration={2.5} />
+        <HoverIcon icon={<BiLogoSpringBoot className="text-7xl text-green-400"/>} text="SpringBoot" duration={3}/>
+        <HoverIcon icon={<SiRubyonrails className="text-7xl text-red-500" />} text="RubyonRails" duration={5}/>
+        <HoverIcon icon={<DiDocker className="text-7xl text-blue-700" />} text="Docker" duration={2}/>
+        <HoverIcon icon={<SiAmazonaws className="text-7xl text-orange-700" />} text="AWS" duration={6}/>
+        <HoverIcon icon={<SiKubernetes className="text-7xl text-blue-500" />} text="Kubernetes" duration={4}/>
+        <HoverIcon icon={<SiMysql className="text-7xl text-sky-700" />} text="MySql" duration={4}/>
+
       </motion.div>
       
     </div>

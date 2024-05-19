@@ -18,7 +18,7 @@ const Navbar = () => {
     <a href="https://github.com/Neel-Lohit?tab=overview&from=2022-08-01&to=2022-08-31" target="_blank" rel="noopener noreferrer">
     <FaGithub style={{ fontSize: '35px' }}/>
     </a>
-    <a href="https://leetcode.com/u/sasankmouli/" target="_blank" rel="noopener noreferrer">
+    <a href="https://leetcode.com/u/its_over_9000/" target="_blank" rel="noopener noreferrer">
     <SiLeetcode style={{ fontSize: '35px' }}/>
     </a>
   </div>

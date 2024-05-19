@@ -7,7 +7,9 @@ export const HERO_CONTENT = `Flexible Software Developer with Diverse experience
 more. My strengths are being able to take up pretty much any technology, adapt quickly and perform tasks as needed to push the team forward. I’m 
 known to perform in any kind of situation thrown at me with a never give-up attitude.`;
  
-export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 5 years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
+export const ABOUT_TEXT = `I am a versatile Software Developer with extensive experience in building full-stack web applications and a solid foundation in both frontend and backend technologies. My skill set includes proficiency in React for front-end development, Spring Boot and Ruby on Rails for backend frameworks, and a wide array of DevOps technologies such as Docker, Kubernetes, and AWS tools (Lambda, EC2, S3, EventBridge). I also have a keen interest and expertise in data science, machine learning, and artificial intelligence.
+
+Throughout my career, I have demonstrated a remarkable ability to adapt quickly to new technologies and deliver results in diverse and challenging environments. I am passionate about continuous learning and leveraging my skills to push the boundaries of technology. Whether it’s developing mobile applications, optimizing web applications, or exploring new frontiers in AI and ML, I am committed to driving innovation and excellence in every project I undertake.`;
 
 export const EXPERIENCES = [
   {
