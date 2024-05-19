@@ -71,7 +71,7 @@ export const PROJECTS = [
     title: "Virtual Incubation Centre - Web Application",
     image: project2,
     description:
-      "Iteratively developed a dynamic virtual incubator site, advancing from PHP in undergrad to Spring-based technologies during an internship, culminating in Kubernetes, EC2, Spring Boot optimization for 30% faster loading and 20% improved user interaction. ",
+      "Iteratively developed a dynamic virtual business incubator site for developing early stage ideas into viable ventures. Advancing from PHP in undergrad to Spring-based technologies during an internship, culminating in Kubernetes, EC2, Spring Boot optimization for 30% faster loading and 20% improved user interaction. ",
     technologies: ["PHP","Spring Boot","HTML", "CSS","Kubernetes", "EC2"],
   },
   {
