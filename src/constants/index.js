@@ -1,17 +1,32 @@
 import project1 from "../assets/projects/project-1.jpg";
 import project2 from "../assets/projects/project-2.jpg";
-import project3 from "../assets/projects/project-3.jpg";
-import project4 from "../assets/projects/project-4.jpg";
+import projectFintech from "../assets/projects/projectFintech.gif";
+import projectEcommerce from "../assets/projects/projectEcommerce.png";
+import projectMarketAnalysis from "../assets/projects/projectMarketAnalysis.png"
 
-export const HERO_CONTENT = `Flexible Software Developer with Diverse experience in Full-stack web applications, I have honed my skills in front-end technologies like React, Backend frameworks like springboot, ruby on Rails and DevOps technologies like Docker, Kubernetes, as well as AWS Tools like Lambda, EC2, S3, EventBridge, with additional expertise in data science, ML, AI, and 
-more. My strengths are being able to take up pretty much any technology, adapt quickly and perform tasks as needed to push the team forward. I’m 
-known to perform in any kind of situation thrown at me with a never give-up attitude.`;
+
+export const HERO_CONTENT = `Passionate Full Stack Developer with diverse experience in designing and implementing end-to-end solutions for web-based applications. Skilled in frontend technologies like React.js and backend technologies such as Node.js and Express.js. Proficient in database management with MongoDB and PostgreSQL. Experienced in cloud deployment on AWS and Azure. Strong collaborator with a proven track record in delivering high-quality, scalable software solutions. Currently seeking Full Stack Developer or Software Development Engineer (SDE) roles.`;
  
 export const ABOUT_TEXT = `I am a versatile Software Developer with extensive experience in building full-stack web applications and a solid foundation in both frontend and backend technologies. My skill set includes proficiency in React for front-end development, Spring Boot and Ruby on Rails for backend frameworks, and a wide array of DevOps technologies such as Docker, Kubernetes, and AWS tools (Lambda, EC2, S3, EventBridge). I also have a keen interest and expertise in data science, machine learning, and artificial intelligence.
 
 Throughout my career, I have demonstrated a remarkable ability to adapt quickly to new technologies and deliver results in diverse and challenging environments. I am passionate about continuous learning and leveraging my skills to push the boundaries of technology. Whether it’s developing mobile applications, optimizing web applications, or exploring new frontiers in AI and ML, I am committed to driving innovation and excellence in every project I undertake.`;
 
 export const EXPERIENCES = [
+
+  {
+    year: "Jun 2022 - Aug 2024",
+    role: "Graduate Research Assistant",
+    company: "Oklahoma State University",
+    description: `
+    • Collaborated with a dynamic team as a Full Stack Developer, gaining hands-on experience in designing and implementing end-to-end solutions for web-based applications using React.js, Node.js, Express.js, and MongoDB.
+• Conceptualized and developed a feature-rich web application, leveraging React.js for the frontend and Node.js/Express.js for the backend, aimed at facilitating course management, student registration, and academic progress tracking.
+• Designed the architecture, wireframes, and user flows for the application, ensuring a seamless and intuitive user experience, with MongoDB as the database to manage data efficiently.
+• Conducted regular code reviews, providing constructive feedback and ensuring code quality and adherence to best practices.
+• Implemented unit testing for both frontend (using Jest) and backend (using Mocha/Chai) components, ensuring the reliability and stability of the application.
+• Conducted user acceptance testing to gather feedback from faculty and students, making iterative improvements that led to a 25% increase in user satisfaction and engagement.`,
+    technologies: ["React.js", "Node.js", "Express.js","MongoDb"],
+  },
+  
   {
     year: "Jun 2023 - Aug 2023",
     role: "Intern",
@@ -37,7 +52,7 @@ export const EXPERIENCES = [
     year: "Nov 2021 - Aug 2022",
     role: "Full Stack Developer",
     company: "Zemoso Technologies",
-    description: `• As a Full Stack Developer, Developed UI components for a robotic cloud laboratory using React JS (using tools such as Storybook, material 
+    description: `• As a Full Stack Developer, Developed UI components for a robotic cloud laboratory using React .js (using tools such as Storybook, material 
       UI, Styled-components, Redux, Hooks, Routers, Axios), introducing innovative frontend features to enhance user experience.
 
       • Engineered REST APIs with Ruby on Rails, incorporating advanced backend functionalities that led to a significant 25% enhancement in 
@@ -45,21 +60,37 @@ export const EXPERIENCES = [
 
       • Elevated testing processes by crafting comprehensive test cases for both front end using (jest, enzyme, react testing library, cypress) and 
       back end using (rspec, factorybot, minitest) resulting in a substantial 15% augmentation of test case coverage, and ensuring robust software 
-      quality and reliability. `,
-    technologies: ["ReactJs", "Ruby on Rails", "Cypress", "Postgres"],
-  },
-  {
-    year: "Aug 2021 - Nov 2022",
-    role: "Intern",
-    company: "Zemoso Technologies",
-    description: `Attained Expertise in version control, Spring Boot, Hibernate, React JS, and Ruby on Rails, spearheading a range of web applications and 
-    containerizing and provisioning them through CI/CD workflows, Docker, Kubernetes, AWS EC2, Terraform and logging and visualization 
-    through Elasticsearch, Grafana.`,
-    technologies: ["Git", "ReactJs", "Spring Boot", "Docker","Kubernetes","EC2"],
+      quality and reliability.
+
+      • Attained Expertise in version control, Spring Boot, Hibernate, React.js, and Ruby on Rails, spearheading a range of web applications and 
+      containerizing and provisioning them through CI/CD workflows, Docker, Kubernetes, AWS EC2, Terraform and logging and visualization 
+      through Elasticsearch, Grafana. `,
+    technologies: ["React.js", "Ruby on Rails", "Spring Boot", "Docker", "Kubernetes", "EC2"],
   },
 ];
 
 export const PROJECTS = [
+  {
+    title: "Fintech News Aggregator and Stock Tracker",
+    image: projectFintech,
+    description:
+      "Developed a fintech website that scrapes financial news and displays relevant information alongside stock fluctuations for a user's followed companies. Designed a user-friendly interface using React.js for displaying news and stock data. Built the backend with Express.js to handle data processing, user authentication, and API integration. Implemented web scraping using Python libraries like BeautifulSoup and Scrapy to gather financial news. Integrated APIs for real-time stock data and visualized stock trends using chart.js. Used PostgreSQL for managing user data, followed companies, and historical stock data.",
+    technologies: ["React.js", "Express.js", "PostgreSQL", "Python", "Web Scraping"],
+  },
+  {
+    title: "GPT-Based Data Science Market Analysis Project",
+    image: projectMarketAnalysis,
+    description:
+      "Conducted an in-depth market analysis utilizing GPT-4 to extract valuable insights and trends in the data science landscape. Employed GPT-4 for Natural Language Processing to analyze market data, extracting trends and key insights. Utilized tools like Matplotlib, Seaborn, and Plotly to create detailed visual reports on market trends. Used Python for data extraction and analysis, integrating with TensorFlow for advanced machine learning models. Produced comprehensive reports and visualizations showcasing market dynamics, emerging technologies, and competitive analysis.",
+    technologies: ["GPT-4", "Natural Language Processing (NLP)", "Python", "TensorFlow"],
+  },
+  {
+    title: "E-commerce Website with Personalized Recommendations",
+    image: projectEcommerce,
+    description:
+      "Developed an E-commerce platform with personalized recommendations. The frontend was developed using React.js for a responsive and user-friendly interface. The backend utilized Node.js and Express.js for server-side operations and API development. Implemented MongoDB for flexible data storage of products, users, and transactions. Built a recommendation engine using collaborative filtering and content-based filtering algorithms. Deployed the application on AWS, utilizing services like EC2, S3, and RDS.",
+    technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "Amazon Web Services (AWS)"],
+  },
   {
     title: "Food Ordering App - Mobile Application (KMIT Hackathon 2019)",
     image: project1,
@@ -67,27 +98,7 @@ export const PROJECTS = [
       "Engineered and launched a user-centric Android food ordering application, utilizing Java and Firebase Real time NOSQL Database to streamline menu browsing, order placement, and payments, contributing to a 30% reduction in order processing time and enhancing overall customer satisfaction for the school cafe.d 20% improved user interaction.",
     technologies: ["Android", "Java", "XML", "Firebase"],
   },
-  {
-    title: "Virtual Incubation Centre - Web Application",
-    image: project2,
-    description:
-      "Iteratively developed a dynamic virtual business incubator site for developing early stage ideas into viable ventures. Advancing from PHP in undergrad to Spring-based technologies during an internship, culminating in Kubernetes, EC2, Spring Boot optimization for 30% faster loading and 20% improved user interaction. ",
-    technologies: ["PHP","Spring Boot","HTML", "CSS","Kubernetes", "EC2"],
-  },
-  {
-    title: "Rails Alpha Blog - Web Application",
-    image: project3,
-    description:
-      "Developed a feature-rich blog application using Ruby on Rails, incorporating token based user authentication, article management using CRUD, and responsive design resulting in a seamless user experience.",
-    technologies: ["JavaScript","Ruby on Rails","HTML", "CSS","Bootstrap","RSpec"],
-  },
-  {
-    title: "Jazz Music Improvisation using LSTM",
-    image: project4,
-    description:
-      "This project involves generating musical sequences using Long Short-Term Memory (LSTM) networks, a type of recurrent neural network (RNN). The goal is to create an AI model capable of learning musical patterns and generating new compositions in a specific style, such as jazz or classical music.",
-    technologies: ["Python", "LSTM", "Keras", "Music21", "TensorFlow"],
-  },
+    
 ];
 
 export const CONTACT = {
