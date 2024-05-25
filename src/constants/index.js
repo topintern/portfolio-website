@@ -19,11 +19,16 @@ export const EXPERIENCES = [
     company: "Oklahoma State University",
     description: `
     • Collaborated with a dynamic team as a Full Stack Developer, gaining hands-on experience in designing and implementing end-to-end solutions for web-based applications using React.js, Node.js, Express.js, and MongoDB.
-• Conceptualized and developed a feature-rich web application, leveraging React.js for the frontend and Node.js/Express.js for the backend, aimed at facilitating course management, student registration, and academic progress tracking.
-• Designed the architecture, wireframes, and user flows for the application, ensuring a seamless and intuitive user experience, with MongoDB as the database to manage data efficiently.
-• Conducted regular code reviews, providing constructive feedback and ensuring code quality and adherence to best practices.
-• Implemented unit testing for both frontend (using Jest) and backend (using Mocha/Chai) components, ensuring the reliability and stability of the application.
-• Conducted user acceptance testing to gather feedback from faculty and students, making iterative improvements that led to a 25% increase in user satisfaction and engagement.`,
+
+    • Conceptualized and developed a feature-rich web application, leveraging React.js for the frontend and Node.js/Express.js for the backend, aimed at facilitating course management, student registration, and academic progress tracking.
+
+    • Designed the architecture, wireframes, and user flows for the application, ensuring a seamless and intuitive user experience, with MongoDB as the database to manage data efficiently.
+
+    • Conducted regular code reviews, providing constructive feedback and ensuring code quality and adherence to best practices.
+
+    • Implemented unit testing for both frontend (using Jest) and backend (using Mocha/Chai) components, ensuring the reliability and stability of the application.
+
+    • Conducted user acceptance testing to gather feedback from faculty and students, making iterative improvements that led to a 25% increase in user satisfaction and engagement.`,
     technologies: ["React.js", "Node.js", "Express.js","MongoDb"],
   },
   

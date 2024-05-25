@@ -4,7 +4,7 @@ import { SiLeetcode } from "react-icons/si";
 const Navbar = () => {
   return (
   <nav className="mb-20 flex items-center justify-between py-6">
-    <a href="https://drive.google.com/file/d/138OHaAaG-k68Yb1Yb0EnNhJftAD6_TfV/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+    <a href="https://drive.google.com/file/d/1H5AFPpsv8CLpfzgD5kOBYQUHm0nA8djr/view?usp=sharing" target="_blank" rel="noopener noreferrer">
       <h1 style={{ fontSize: '25px', textDecoration: 'underline' }}>Resume</h1>
     </a>
   <div className="flex flex-shrink-0 items-center">
